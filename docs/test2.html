@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI對話模擬公司 - 客制化AI對話方案</title>
+    <style>
+        /* CSS 樣式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007bff;
+        }
+        section {
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #intro {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        #services {
+            background-color: #e9ecef;
+        }
+        #contact {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        /* 簡單的動畫效果 */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        section {
+            animation: fadeIn 1s ease-in;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AI對話模擬公司</h1>
+        <p>使用AI大模型，提供客制化個人化對話模擬方案</p>
+    </header>
+
+    <nav>
+        <a href="#intro">公司介紹</a>
+        <a href="#services">服務項目</a>
+        <a href="#contact">聯絡我們</a>
+    </nav>
+
+    <section id="intro">
+        <h2>公司介紹</h2>
+        <p>我們是一家專注於AI技術的小型公司，致力於利用先進的AI大模型，為客戶提供高度客制化的個人化對話模擬方案。無論是教育、娛樂、客服還是醫療領域，我們的解決方案都能幫助您打造智能、互動的對話體驗。</p>
+        <p>我們的團隊由AI專家和軟體工程師組成，擁有豐富的經驗，確保每一個方案都符合客戶的特定需求。</p>
+    </section>
+
+    <section id="services">
+        <h2>服務項目</h2>
+        <ul>
+            <li>AI對話模擬開發：基於大型語言模型（如GPT系列），客制化對話腳本和邏輯。</li>
+            <li>個人化定制：根據用戶數據和偏好，調整AI的回應風格和內容。</li>
+            <li>整合服務：將AI對話系統整合到您的App、網站或硬體設備中。</li>
+            <li>諮詢與培訓：提供AI技術諮詢和團隊培訓服務。</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>如果您對我們的服務感興趣，請點擊下方按鈕聯絡我們！</p>
+        <button class="button" onclick="showContactInfo()">顯示聯絡資訊</button>
+        <p id="contact-info" style="display: none; margin-top: 20px;">電子郵件：info@aidialogue.com<br>電話：+886-2-12345678<br>地址：台北市信義區101大樓</p>
+    </section>
+
+    <footer>
+        &copy; 2025 AI對話模擬公司. All rights reserved.
+    </footer>
+
+    <script>
+        // JavaScript 腳本
+        function showContactInfo() {
+            var info = document.getElementById('contact-info');
+            if (info.style.display === 'none') {
+                info.style.display = 'block';
+            } else {
+                info.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
