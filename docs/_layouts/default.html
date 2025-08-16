@@ -15,6 +15,8 @@ body {
 		color: rgb(255, 255, 255);
 		background-color: rgb(1, 1, 1);
 		font-size: 2em;
+        margin: 0;
+        padding: 0;
 }
 
 a,
@@ -31,7 +33,28 @@ table, tr, th ,td ,tr:nth-child(even),tr:nth-child(odd){
 	
 .mono { font-family: monospace, monospace, monospace; }
 </style>
-<title>{% if page.title %}{{ page.title }}{% else %}{{ page.name }}{% endif %}</title>
+
+  <style>
+    .container {
+      display: grid;
+      place-items: end; /* 將內容置於右下角 */
+      height: 100vh; /* 容器高度為視窗高度 */
+      width: 100%;
+    }
+    .container a {
+      background-color: #007bff; /* 背景色 */
+      color: white; /* 文字顏色 */
+      padding: 10px 20px; /* 內邊距 */
+      text-decoration: none; /* 移除下劃線 */
+      border-radius: 5px; /* 圓角 */
+    }
+    .container a:hover {
+      background-color: #0056b3; /* 滑鼠懸停時的背景色 */
+    }
+  </style>
+	
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ page.name }}{% endif %}</title>
+	
 </head>
 
 <body>
@@ -40,7 +63,7 @@ table, tr, th ,td ,tr:nth-child(even),tr:nth-child(odd){
 	  {{ content }}
   	</div>
 
-	<div style="display: grid; place-items: end; height: 100vh;">
+	<div class="container">
   		<a href="/">Home</a>
 	</div>
 	
